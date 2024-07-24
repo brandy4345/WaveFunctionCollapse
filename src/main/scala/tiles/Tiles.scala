@@ -1,6 +1,6 @@
 package tiles
 
-import cell.{BlankCell, ICell, RightDownLeftCell, UpDownLeftCell, UpRightDownCell, UpRightLeftCell}
+import cell.{BlankCell, DownLeftCell, ICell, RightDownCell, RightDownLeftCell, UpDownLeftCell, UpLeftCell, UpRightCell, UpRightDownCell, UpRightLeftCell}
 import controller.AlgoritmoController
 
 import scala.collection.mutable
@@ -24,7 +24,11 @@ class Tiles {
       new RightDownLeftCell,
       new UpDownLeftCell,
       new UpRightDownCell,
-      new UpRightLeftCell
+      new UpRightLeftCell,
+      new UpRightCell,
+      new RightDownCell,
+      new DownLeftCell,
+      new UpLeftCell
     )
   private var entropy = cells.length
   private var lastEntropy = entropy
