@@ -7,9 +7,9 @@ import scala.collection.mutable.ListBuffer
 import scala.util.Random
 
 class AlgoritmoController {
-  private val tamano = 30
+  private val tamano = 3
   //(new Random().nextFloat()*100000000).toInt
-  private val seed = 10
+  private val seed = 1
   private var state: IState = new RandomState()
   private val orderList: ListBuffer[Tiles] = ListBuffer[Tiles]()
 
